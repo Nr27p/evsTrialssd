@@ -1,0 +1,9 @@
+h2{
+    width: 100%;
+    background-image:url("Images/chronology.jpg");
+    background-repeat:no-repeat; 
+
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}

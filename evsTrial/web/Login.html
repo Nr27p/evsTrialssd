@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign
+        </title></head>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <!-- action="registervoter.jsp" action="post" -->
+        <h2>Registration form </h2>
+        <form>
+        
+            <label for="rollno">Enter your Roll no :</label><br>
+                <input type="text" id="VoterId" name="VoterId" placeholder="4-digit number"><br>
+            <label for="name">Enter your name :</label><br>
+                <input type="text" id="VoterName" name="VoterName" placeholder="Firstname Lastname"><br>
+            <label for="DOB">Enter your Date of Birth :</label><br>
+                <input type="datetime" id="VoterDOB" name="VoterDOB" placeholder="dd/mm/yyyy"><br>
+            <label for="stream" >Select your stream</label><br>
+                <select id="VoterStream" name="VoterStream" aria-placeholder="Stream">
+                        <option value="Computer Engineering">Computer Engineering</option><!-- comment -->
+                        <option value="Electronics & Computer Science">Electronics &amp; Computer Science</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option><!-- comment -->
+                        <option value="Science & Humanities">Science &amp; Humanities</option><!-- comment -->
+                        <option value="Artificial Intelligence & Data Science">Artificial Intelligence &amp; Data Science</option>
+                    </select><!-- comment -->
+                <!-- comment -->
+                <br>
+            <label for="email" >Enter your email address</label><br><!-- comment -->
+                <input type="email" id="VoterEmail" name="VoterEmail" placeholder="Email"><!-- comment --> <br>
+            <label for="password">Enter password</label><!-- comment --><br>
+                <input type="password" id="VoterPassword" name="VoterPassword"><!-- comment -->
+                <!-- Select your choice for Face Recognition featurecomment -->
+                <input type="radio" id="EnrollmentChoice" name="EnrollmentChoice" value="True">Enroll<!-- comment --> <br>
+                    <input type="radio" id="EnrollmentChoice" name="EnrollmentChoice" value="False">Do Not Enroll <br><!-- comment -->
+                <!-- comment -->
+                <!-- Eventually FR will be used for validating Voters whoever opts for FR feature -->
+            <!-- </tr>
+            <tr>
+                <td></td>comment -->
+                <input type="submit" id="Submit" /><input type="reset" id="Reset" /> <!-- comment -->
+                <!-- <td>Will be used to reset password in event of amnesia -->
+            </form>
+
+    <!--#include virtual="footer.shtml" -->
+        </body>
+</html>
